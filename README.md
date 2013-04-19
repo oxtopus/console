@@ -19,7 +19,7 @@ By default, the project layout should look something like this:
         │   └── example.py
         └── version.py
 
-Firstly, use virtualenv:
+Firstly, use [virtualenv](https://pypi.python.org/pypi/virtualenv):
 
     virtualenv .
     source bin/active
@@ -64,19 +64,19 @@ This process lets you test the package installation process without interfering
 with your system environment, while still being able to make changes without
 having to repeatedly re-install the package.  Ultimately, when your package is
 installed as an egg, the changes will be made at the system level (or user
-level, if installing to ~/.local, which is recommended)
+level, if installing to ``~/.local``, which is recommended)
 
 You'll notice that the following commands were installed into ``bin/``:
 
-- runner
-- foo
-- bar
-- example
+- ``runner``
+- ``foo``
+- ``bar``
+- ``example``
 
 Defining commands
 -----------------
 
-Take a look at setup.py.  You'll notice a section that lookes like this:
+Take a look at ``setup.py``.  You'll notice a section that lookes like this:
 
     entry_points = {
       'console_scripts': [
