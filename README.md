@@ -3,7 +3,7 @@ So you want commands?
 
 Simple demonstration of setuptools console_scripts entry points.
 
-Firs things, first.
+First things, first.
 -------------------
 
 By default, the project layout should look something like this:
@@ -55,13 +55,13 @@ What just happened?
 
 By running ``python setup.py develop`` you installed the package in
 development mode, which basically means that the current source tree was
-installed into your path by means of creating a tools.egg-link file in your
-site-packages directory (currently in your active virtualenv) that links to
+installed into your path by means of creating a ``tools.egg-link`` file in your
+``site-packages`` directory (currently in your active virtualenv) that links to
 the current directory.  Among other things, it also created some commands in
-bin/ (currently part of your path, again, thanks to virtualenv).
+``bin/`` (currently part of your path, again, thanks to virtualenv).
 
 This process lets you test the package installation process without interfering
-with your system environment, while still being able to make changes without
+with your system environment while still being able to make changes without
 having to repeatedly re-install the package.  Ultimately, when your package is
 installed as an egg, the changes will be made at the system level (or user
 level, if installing to ``~/.local``, which is recommended)
